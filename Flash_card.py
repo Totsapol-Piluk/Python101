@@ -7,7 +7,7 @@ GUI = Tk()
 GUI.title('Vocabulary')
 GUI.geometry('500x400')
 
-word = ['cat','dog','pen','window']
+word = ['cat','dog','pen','window','color']
 
 def random_word():
     global word_choice
@@ -23,6 +23,8 @@ def answer():
         lb_answer.config(text='ปากกา')
     elif word_choice == 'window':
         lb_answer.config(text='หน้าต่าง')
+    elif word_choice == 'color':
+        lb_answer.config(text='สี')
 
         
 random_button = ttk.Button(GUI,text='Random',command=random_word)
